@@ -1,0 +1,96 @@
+@import './color';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: $veryDarkBlue;
+}
+.card {
+	width: 375px;
+	background-color: $darkBlue;
+	border-radius: 25px;
+	&__body {
+		padding: 20px;
+		font-family: 'Overpass', sans-serif;
+	}
+	&__icon {
+		width: 35px;
+		padding: 5px;
+		background-color: $borderIcon;
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		color: $white;
+		margin-bottom: 20px;
+	}
+	&__text {
+		color: $lighGrey;
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	&__range {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 20px;
+		.btn {
+			font-size: 20px;
+			margin: 5px;
+			border-radius: 50%;
+			padding: 1px;
+			width: 50px;
+			height: 50px;
+			border: none;
+			color: $lighGrey;
+			background-color: $borderIcon;
+			cursor: pointer;
+			transition: background-color 0.5s, color 0.5s;
+			&:hover {
+				background-color: $orange;
+				color: $white;
+			}
+		}
+	}
+	&__btn {
+		width: 100%;
+		.sub {
+			width: 100%;
+			font-size: 20px;
+			padding: 15px;
+			text-transform: uppercase;
+			background-color: $orange;
+			color: $white;
+			border: none;
+			border-radius: 25px;
+			cursor: pointer;
+			transition: background-color 0.5s, color 0.5s;
+			&:hover {
+				background-color: $white;
+				color: $orange;
+			}
+		}
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}

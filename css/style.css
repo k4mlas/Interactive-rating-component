@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.card {
+  width: 375px;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 25px;
+}
+.card__body {
+  padding: 20px;
+  font-family: "Overpass", sans-serif;
+}
+.card__icon {
+  width: 35px;
+  padding: 5px;
+  background-color: hsl(209deg, 17%, 33%);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card__title {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 20px;
+}
+.card__text {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.card__range {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card__range .btn {
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: hsl(217deg, 12%, 63%);
+  background-color: hsl(209deg, 17%, 33%);
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+.card__range .btn:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card__btn {
+  width: 100%;
+}
+.card__btn .sub {
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+.card__btn .sub:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
