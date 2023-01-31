@@ -84,6 +84,57 @@ body {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
 }
+.card__error {
+  margin-top: 15px;
+}
+.card__errorText {
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+.card__bodySecond {
+  display: none;
+  padding: 20px;
+  font-family: "Overpass", sans-serif;
+}
+.card__voteImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.card__voteImg img {
+  width: 70%;
+}
+.card__contentSecond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.card__checkText {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  color: hsl(25deg, 97%, 53%);
+  margin-bottom: 20px;
+  width: 60%;
+  background-color: hsl(209deg, 17%, 33%);
+  border-radius: 55px;
+}
+.card__titleSecond {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 20px;
+}
+.card__infoText {
+  text-align: center;
+  font-size: 15px;
+  color: hsl(217deg, 12%, 63%);
+}
 
 .attribution {
   font-size: 11px;
